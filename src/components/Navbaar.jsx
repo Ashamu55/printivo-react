@@ -15,11 +15,12 @@ function Navbaar() {
             alignItems:"center",
             width:"78.4%",
             margin:"auto",
-            backgroundColor:"#ede8d8",
+            backgroundColor:"#f7f6f4",
             padding:"10px",
             position:"sticky",
             top:'0',
             bottom:"0",
+            zIndex:"1000"
             }}>
             <ul style={{listStyle:"none", paddingLeft:"110px"}}>
                 <li>

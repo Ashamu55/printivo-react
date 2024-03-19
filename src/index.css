@@ -4,28 +4,101 @@
     box-sizing: border-box;
 }
 
-.first-class{
-    /* height: 400px; */
-    width: 300px;
-    border: 1px solid black;
+.card {
+    border: 1px solid ;
+    border-color: rgb(229, 231, 235);
+    padding: 20px;
+    margin: 10px;
+    color: #384a62;
+    text-align: center;
+    max-width: 270px;
+    max-height: 500px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
     overflow: hidden;
+    text-align: left;
+    box-shadow: 0 0px 12px rgba(68, 77, 136, 0.1);
 }
 
-.business{
-    width: 400px;
+.image-wrapper {
+    overflow: hidden;
+    margin: -20px 0px 0px -20px;
+}
+
+.card-image {
+    width: 270px;
+    max-width: 100%;
+    height: 220px;
+    vertical-align: middle;
+    object-fit: cover;
     transition: transform 0.2s;
-    height: 200px;
-    padding-right: 90px;
 }
 
-.business:hover{
+.card .card-image:hover {
     transform: scale(1.1);
 }
 
-h3{
-    font-family:sans-serif;
-    font-size: 16px;
-    margin-left: 20px;
-    margin-top: 10px;
-    color: #394a63;
+.card .card-title {
+    margin: -15px 0px -10px 0px;
+    font-size: 15px;
+    width: 220px;
+    font-weight: 600;
+}
+
+.card .card-text {
+    font-size: 13px;
+    color: #748097;
+    font-weight: 600;
+    margin: 0px 0px -20px 0px;
+}
+
+.button {
+    background: #d77f81;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 200px;
+    max-width: 100%;
+    padding: 10px 10px 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+}
+
+.button-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: calc(100% - 20px);
+}
+
+.button-icon {
+    margin: 0px 15px 0px 0px;
+    transition: transform 0.2s ease;
+}
+
+.button:hover .button-icon {
+    transform: translateX(3px);
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.quantity {
+    color: #748097;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.amount {
+    margin-bottom: -10px;
 }
