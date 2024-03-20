@@ -10,10 +10,6 @@ function Solution() {
                     15,000 other businesses in Nigeria.</p>
                 <img style={{ width: "1250px", marginBottom: "100px" }} src={Group} alt="" />
             </div>
-
-            <div style={{paddingLeft:"110px",}}>
-
-            </div>
         </>
     )
 }
